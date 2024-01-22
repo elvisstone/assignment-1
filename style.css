@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&family=Lato:wght@900&family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik+Vinyl&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    /* height: 100vh; */
+    /* background: rgb(97,255,0);
+    background: linear-gradient(90deg, rgba(97,255,0,1) 0%, rgba(244,255,0,1) 51%, rgba(0,255,237,1) 100%); */
+    background-image: url("./images/forest.png");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size: 100%;
+}
+
+header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+    margin: 20px auto 20px;
+    font-family: 'Rubik Vinyl', system-ui;
+    font-weight: 900;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 30px auto 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 50px 14px #000000; 
+    box-shadow: 0px 0px 40px 14px #000000;
+    /* background: transparent; */
+    backdrop-filter: blur(10px);
+    transition: transform 1s ease;
+}
+
+section:hover{
+    transition: transform 1s ease;
+    transform: scale(1.1);
+}
+
+/**!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/*/
+article.photo{
+    width: 20%;
+    margin-right: 30px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+article.text{
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    color: orange;
+}
+
+article.text button{
+    width: 15%;
+    text-align: center;
+    align-items: end;
+    margin: 50px 0px 0px auto;
+    background-color: orange;
+    cursor: pointer;
+    color: blue;
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+}
+
+article.text button:hover{
+    background-color: rgba(128, 128, 128, 0.455);
+}
+
+article.text button:hover a{
+    color: orange;
+}
+
+article.text button a{
+    text-decoration: none;
+}
+
